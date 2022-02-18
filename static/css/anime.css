@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg,rgb(0, 24, 102)30%,rgb(0, 204, 255)100%);
+    min-height: 100vh;
+}
+.navbar{
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+    padding: 20px 0px;
+}
+.sticky{
+    background: rgb(9, 0, 94);
+}
+.max-width{
+    max-width: 100%;
+    padding: 0px 80px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'The Nautigal', cursive;;
+    color: rgb(255, 255, 255);
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 25px 0px 25px;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease;
+}
+.navbar .menu li button{
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 40px;
+}
+.navbar .menu li a:hover{
+    color: rgb(0, 174, 255);
+}
+
+.sign-in{
+    display: none;
+    position: fixed;
+    margin-top: 25px;
+    width: 350px;
+    background: rgba(0, 204, 255, 0.404);
+    color: rgb(255,255,255);
+    padding: 10px;
+    border-radius: 5px;
+    transform: translate(-50%); 
+}
+.sign-in .usr-inf{
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.navbar .menu li .sign-in button{
+    background: rgba(0, 204, 255);
+    color: white;
+    width: 70px;
+    border-radius: 10px;
+}
+.show-bx{
+    display: block;
+}
+
+.box-sr{
+    height: 200px;
+    padding-top: 175px;
+}
+.search{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 40px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    background: rgba(255, 255, 255, 0.192);
+}
+.search .sr-txt{
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    float: left;
+    display: none;
+    font-size: 18px;
+    outline: none;
+    line-height: 40px;
+    width: 0px;
+    
+}
+.search .sr-btn{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    padding: 8px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+.search:hover >.sr-txt{
+    width: 195px;
+    display: flex;
+    margin-left: 15px;
+    padding-right: 10px;
+}
+.search:hover >.sr-btn{
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+    margin-right: 4px;
+    padding: 7px 0px 0px 8px;
+}
+
+.catgry{
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.box-1{
+    width: 150px;
+    text-align: center;
+    margin: 0px 20px;
+}
+.dropdown-1{
+    background: none;
+    border: none;
+    background: rgba(0, 204, 255, 0.507);
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.drop-con-1{
+    list-style: none;
+    background: rgba(0, 0, 0, 0.692);
+    border-radius: 0px 0px 5px 5px;
+    display: none;
+}
+.drop-con-1 button{
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease
+}
+.box-1:hover>.drop-con-1{
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+.drop-con-1 li button:hover{
+    color: rgba(0, 204, 255, 0.507);
+}
+
+
+.cards-block{
+    width: 100%;
+    padding: 25px;
+}
+.card{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.card .bx{
+    background: white;
+    height: 150px;
+    width: 120px;
+    border-radius: 10px;
+}
+.card .crd-txt{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}

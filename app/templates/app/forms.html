@@ -1,0 +1,12 @@
+{% block content %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div>Reviewer Name: {{form.rev_name}} </div>
+        <input type="checkbox" name="{{form.name}}" value="{{content.name}}">
+        <div>Name : {{form.name}} </div>
+        <div>Review: {{form.review}} </div>
+        <input type="submit" name="Submit">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    padding: 20px 0px;
+    height: 75px;
+    background: black;
+    width: 100%;
+    display: none;
+    z-index: 99;
+}
+.active{
+    display: block;
+}
+.navbar .nav-wid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+}
+.navbar .nav-wid div a{
+    color: white;
+    font-family:'The Nautigal', cursive;
+    font-size: 30px;
+}
+#id_name{
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: medium;
+    padding-left: 8px;
+    max-width: 150px;
+}
+#id_name:hover{
+    border-bottom: 1px solid;
+    border-color: aliceblue;
+}
+.search button i{
+    font-size: 20px;
+    color: white;
+}
+.sr-btn{
+    background: none;
+    border: none;
+    outline: none;
+} 
+
+
+.hero{
+    min-width: 100%;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.87);
+    text-align: center;
+}
+.hero img{
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.max-width{
+    margin: 0px 7%;
+}
+.c1{
+    display: flex;
+}
+.c1 .post{
+    height: 300px;
+
+    position: relative;
+    top: -80px;
+}
+.c1 .title{
+    position: relative;
+    padding: 75px 7%;
+}
+
+.block-s{
+    display: flex;
+}
+.e1{
+    width: 98%;
+    padding: 25px 1%;
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+}
+.bl-sm{
+    border-radius: 10px;
+    background-color: black;
+    padding: 15px 20px;
+    color: white;
+    width: 120px;
+    height: fit-content;
+    margin: auto;
+}
+.bl-sm a{
+    color: white;
+}
+.gen{
+    border-radius: 10px;
+    background-color: black;
+    padding: 20px 30px;
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    max-height: 200px;
+}
+.gen ul{
+    list-style: none;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+
+.des{
+    background: black;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 50px 0px;
+    color: white;
+}
+.rev{
+    background: black;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 50px 0px;
+    color: white;
+}
+.rev div{
+    justify-content: space-between;
+    display: flex;
+}
+.rev div h3{
+    padding: 0px 5%;
+}
+
+.rev .rev-card{
+    display: block;
+    color: black;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 2%;
+}
+.rev .page-num{
+    justify-content: center;
+    margin-top: 20px;
+}
+.rev .page-num a{
+    padding: 0px 10px;
+}
+.rev .page-num span{
+    margin: 0px 10px;
+}
+
+.rev-form-contain{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.356);
+    z-index: 199;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.fact{
+    opacity: 1;
+    pointer-events: auto;
+}
+.rev-form-contain .rev-form{
+    background: rgb(0, 0, 0);
+    height: 60vh;
+    width: 70vw;
+    padding: 3%;
+    border-radius: 5px;
+    color: white;
+}
+#add{
+    padding: 5px;
+    background: white;
+    color: rgb(0, 119, 255);
+    border:3px solid rgb(0, 119, 255);
+    outline: none;
+    border-radius: 5px;
+    height: max-content;
+    margin: auto 0px;
+}
+#add:hover{
+    background: rgb(0, 119, 255);
+    color: white;
+}
+
+#id_review{
+    background: none;
+    border: 1px solid;
+    outline: none;
+    color: white;
+    width: 300px;
+    height: 150px;
+}
+#id_rev_name{
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    color: white;
+    
+}
+.rev-form-contain .rev-form h4{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.rev-form-contain .rev-form form .i3{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 30px;
+}
+.rev-form-contain .rev-form form .i3 div button{
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}

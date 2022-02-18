@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/gen.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=Poppins:wght@200&family=The+Nautigal:wght@700&family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wid">
+            <div></div>
+            <div><a href="/">Project Static</a></div> 
+            <div></div>
+        </div>
+    </nav>
+    <div class="hero">
+    </div>
+
+    <div class="search">
+        <div class="sr-bx">
+        <form method="get">
+        <div class="frbx">
+        <div class="box-2">Name: <input type="text" name="name" id="id_name"></div>
+        <div class="box-1">
+            <button class="dropdown-1">CATEGORY &downarrow;</button>
+            <ul class="drop-con-1">
+                {% for j in cat %}
+                <li><input type="checkbox" name="catgrys" id="id_catgrys" value="{{j.id}}">{{j.name}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="box-1">
+            <button class="dropdown-1">GENRE &downarrow;</button>
+            <ul class="drop-con-1">
+                {% for i in gen %}
+                <li><input type="checkbox" name="generes" id="id_generes" value="{{i.id}}">{{i.name}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div><button type="submit" class="sr-btn"><i class="fa fa-search"></i></button></div>
+        </div>
+        </form>
+        </div>
+        
+    </div>
+
+    <div class="card-dis">
+        {% block content %}
+        {% for i in Cards %}
+        <div class="card"><a href="/WSinfo/{{i.name}}">
+            <img src="{{i.post_img}}" alt="no image" class="bx">
+            <h3 class="crd-txt">{{i.name}}</h3></a>
+        </div>
+        {% endfor %}
+        {% endblock %}
+    </div>
+
+
+</body>
+</html>
