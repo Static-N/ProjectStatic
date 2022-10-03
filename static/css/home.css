@@ -35,6 +35,13 @@ body{
     font-family: 'The Nautigal', cursive;
     color: rgb(255, 255, 255);
 }
+
+.navbar .parent-nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -79,13 +86,6 @@ body{
     color: rgba(255, 255, 255, 0.664);
 }
 
-.search{
-    margin-top: 20px;
-    display: flex;
-    width:100%;
-    height: 50px;
-    justify-content: center;
-}
 .search button{
     width: 40px;
     height: 40px;
@@ -114,6 +114,8 @@ body{
 img{
     height: 200px;
     border-radius: 10px;
+    width: 200px;
+    object-fit:cover;
 }
 img:hover{
     transform: scale(1.15);
@@ -129,6 +131,9 @@ img:hover{
 @media (max-width: 725px){
     .max-width{
         padding: 0px 50px;
+    }
+    .navbar .search{
+        margin-right:30px;
     }
     .menu-btn{
         display: block;
@@ -163,8 +168,17 @@ img:hover{
         max-width: 100%;
     }
     .home .right{
+        height:90vh;
         padding: 0px;
         padding-top: 50px;
+    }
+     .home .right img {
+        height: 240px;
+        width: 90%;
+    }
+    
+    .home .right h3 {
+        margin-top:20px;
     }
     
 }

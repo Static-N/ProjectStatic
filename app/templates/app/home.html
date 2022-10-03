@@ -17,14 +17,21 @@
   <nav class="navbar">
     <div class="max-width">
         <div class="logo"><a href="/">Project Static</a></div>
-        <ul class="menu">
+        <div class="parent-nav">
+          <div class="search">
+            <button>
+              <a href="/home/search"><i class="fa fa-search"></i></a>
+            </button>
+          </div>
+          <ul class="menu">
             <li><a href="/Anime">Anime</a></li>
             <li><a href="/Movie">Movies</a></li>
             <li><a href="/Drama">Dramas</a></li>
             <li><a href="/Web Series">Series</a></li>
-        </ul>
-        <div class="menu-btn">
+          </ul>
+          <div class="menu-btn">
             <i class="fa fa-bars"></i>
+          </div>
         </div>
     </div>
   </nav>
@@ -32,7 +39,7 @@
     <div class="left">
       <div class="content">
         <h1 id="title">
-          welcome to world of entertainment
+          Welcome to The World of Entertainment
         </h1>
         <div class="intr">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, velit hic. 
@@ -48,25 +55,20 @@
           Perferendis assumenda rerum aliquid facilis id provident beatae, eum est vitae.
           Eius facere sapiente iste ullam, voluptatem commodi voluptatum?
         </div>
-        <div class="search">
-         <button>
-            <a href="/home/search"><i class="fa fa-search"></i></a>
-          </button>
-        </div>
       </div>
     </div>
     <div class="right">
       <div class="box">
-        <a href="/Anime"><img src="{% static '/imgs/1638201972294.jpg' %}" alt=""><h3>ANIME</h3></a>
+        <a href="/Anime"><img src="{% static '/imgs/anime-bg.jpg' %}" alt=""><h3>ANIME</h3></a>
       </div>
       <div class="box">
-        <a href="/Drama"><img src="{% static '/imgs/1638201972294.jpg' %}" alt=""><h3>DRAMA</h3></a>
+        <a href="/Drama"><img src="{% static '/imgs/42494.jpg' %}" alt=""><h3>DRAMA</h3></a>
       </div>
       <div class="box">
-        <a href="/Web Series"><img src="{% static '/imgs/1638201972294.jpg' %}" alt=""><h3>SERIES</h3></a>
+        <a href="/Web Series"><img src="{% static '/imgs/513111.jpg' %}" alt=""><h3>SERIES</h3></a>
       </div>
       <div class="box">
-        <a href="/Movie"><img src="{% static '/imgs/1638201972294.jpg' %}" alt=""><h3>MOVIES</h3></a>
+        <a href="/Movie"><img src="{% static '/imgs/1561410.jpg' %}" alt=""><h3>MOVIES</h3></a>
       </div>
     </div>
   </div>
